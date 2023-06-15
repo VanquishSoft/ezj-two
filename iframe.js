@@ -5,10 +5,4 @@ function displayMessage (evt) {
 	}
 }
 
-if (window.addEventListener) {
-	// For standards-compliant web browsers
-	window.addEventListener("message", displayMessage, false);
-}
-else {
-	window.attachEvent("onmessage", displayMessage);
-}
+window.addEventListener("message", displayMessage);
