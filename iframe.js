@@ -1,5 +1,5 @@
 function displayMessage (evt) {
-	console.log(evt.data)
+	document.documentElement.innerHTML = evt.data
 	localStorage.setItem("location-data", JSON.stringify(evt.data));
 }
 
