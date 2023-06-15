@@ -1,4 +1,5 @@
 function displayMessage (evt) {
+	console.log(evt.data)
 	localStorage.setItem("location-data", evt.data);
 }
 
