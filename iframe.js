@@ -1,5 +1,5 @@
 function displayMessage (...evt) {
-	document.getElementById("test").innerHTML = "data:"+JSON.stringify(evt);
+	document.getElementById("test").innerHTML += "\n data:"+JSON.stringify(evt);
 	if (evt.origin === "https://app.jillsoffice.com") {
 		localStorage.setItem("location-data", JSON.stringify(evt.data));
 	}
