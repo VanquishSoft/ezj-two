@@ -1,6 +1,6 @@
 function displayMessage (evt) {
 	console.log(evt.data)
-	localStorage.setItem("location-data", evt.data);
+	localStorage.setItem("location-data", JSON.stringify(evt.data));
 }
 
 if (window.addEventListener) {
